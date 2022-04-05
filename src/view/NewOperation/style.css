@@ -1,0 +1,53 @@
+.layout-operacao{
+  width: 70% !important;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.text-operacao{
+  color: #444 !important;
+  text-align: center;
+}
+.layout-row-operacao{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.layout-form-operacao{
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 5px 4px #eee;
+  padding: 40px;
+}
+.layout-row-operacao-2{
+  margin-bottom: 50px;
+}
+.layout-row-operacao-3{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cedula{
+  display: flex;
+  margin-bottom: 30px;
+}
+.col-cedula{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.input-valor{
+  height: 100px;
+  width: 100%;
+  font-size: 40px;
+  border: none;
+  text-align: center;
+}
+.layout-salvar-operacao-btn{
+  width: 170px;
+  display: block;
+  margin: 120px auto;
+}
