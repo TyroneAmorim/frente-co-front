@@ -1,0 +1,64 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "tsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react", 
+        "react-hooks", 
+        "@typescript-eslint", 
+        "prettier"
+    ],
+    "rules": {
+        "import/no-unresolved": "error",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "mjs": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+         "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
+         "react/function-component-definition": [
+            2,
+            {
+              "namedComponents": ["arrow-function", "function-declaration", "function-expression"],
+              "unnamedComponents": "arrow-function"
+            }
+          ],
+          "react/jsx-props-no-spreading": "off",
+          "react/require-default-props": "off",
+          "prettier/prettier": ["error", {"singleQuote": true, "parser": "flow"}],
+          "react/jsx-no-useless-fragment": "off",
+          "@typescript-eslint/no-explicit-any": "off",
+          "import/no-cycle": "off"
+    },
+    "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true
+          }
+        }
+      }
+}
